@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: todo-list
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:49156/todolist
+    username: develop
+    password: 12345
+    driverClassName: org.postgresql.Driver
+server:
+  port: 8400
