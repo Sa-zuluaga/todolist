@@ -6,28 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "lists")
-public class ToDoListInfra {
+@Table(name = "items")
+public class ToDoItemInfra {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long listId;
-
-    private String name;
+    private Long itemId;
     private String description;
-    private String email;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "listId",referencedColumnName = "listId")
-    List<ToDoItemInfra> items = new ArrayList<>();
-
-
+    private boolean done;
 
 }
