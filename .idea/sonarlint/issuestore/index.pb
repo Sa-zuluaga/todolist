@@ -31,8 +31,6 @@ Rsrc/main/java/org/sazuluaga/todolist/infrastructure/controller/ListController.j
 Lsrc/main/java/org/sazuluaga/todolist/infrastructure/model/ToDoListInfra.java,a\f\af75e6537af33d890cc04d1a189c275b1de0891d
 |
 Lsrc/main/java/org/sazuluaga/todolist/infrastructure/model/ToDoItemInfra.java,4\a\4ad4ffd27f92d557d59de0e9b30d4059e023c486
-e
-5src/main/java/org/sazuluaga/todolist/TodoListApp.java,e\7\e7f98294419d77f4810ef081eab9d82a4483cda6
 r
 Bsrc/main/java/org/sazuluaga/todolist/domain/Item/ItemMediator.java,9\1\9117bd26288ecbfa09544032ab3b70b41121b965
 |
@@ -45,3 +43,11 @@ Isrc/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java,1\b\
 Ksrc/test/java/org.sazuluaga.todolist/infrastructure/ListAcceptanceTest.java,b\2\b28cbd1d96060d6fcd9881986afb20c13da73d85
 f
 6src/test/java/org.sazuluaga.todolist/TodoListTest.java,c\2\c291b91bb3c9053f8efe28beee3e43eb8c1a0dae
+|
+Lsrc/test/java/org.sazuluaga.todolist/infrastructure/ItemsAcceptanceTest.java,b\a\ba745ecedfa4309a54ea79e1892cab2b10149458
+ƒ
+Ssrc/main/java/org/sazuluaga/todolist/infrastructure/persistance/ListRepository.java,0\3\0370f4633024ccdc69282cad4bfab9d2128ca168
+ƒ
+Ssrc/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java,d\8\d833ae7a78a55604eadee785ad46d105cdc3c0f7
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35

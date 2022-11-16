@@ -9,7 +9,7 @@ spring:
       ddl-auto: create-drop
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:49153/todolist
+    url: jdbc:postgresql://192.168.100.21:49153/todolist
     username: develop
     password: 12345
     driverClassName: org.postgresql.Driver
