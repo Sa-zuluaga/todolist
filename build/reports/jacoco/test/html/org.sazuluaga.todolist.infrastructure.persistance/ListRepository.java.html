@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ListRepository.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">todolist</a> &gt; <a href="index.source.html" class="el_package">org.sazuluaga.todolist.infrastructure.persistance</a> &gt; <span class="el_source">ListRepository.java</span></div><h1>ListRepository.java</h1><pre class="source lang-java linenums">package org.sazuluaga.todolist.infrastructure.persistance;
+
+import org.sazuluaga.todolist.domain.model.ToDoList;
+import org.sazuluaga.todolist.domain.persistance.IListRepository;
+import org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper;
+import org.sazuluaga.todolist.infrastructure.model.ToDoListInfra;
+import org.sazuluaga.todolist.infrastructure.persistance.jpa.ListJpa;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+<span class="fc" id="L12">public class ListRepository implements IListRepository {</span>
+    public static final String LIST_NOT_FOUND = &quot;No se ha encontrado la lista&quot;;
+    @Autowired
+    private ListJpa listJpa;
+
+    @Override
+    public ToDoList create(ToDoList toDoList) {
+<span class="nc" id="L19">        ToDoListInfra toDoListInfra = ToDoListMapper.toToDoListInfra(toDoList);</span>
+<span class="nc" id="L20">        toDoListInfra = listJpa.save(toDoListInfra);</span>
+<span class="nc" id="L21">        return ToDoListMapper.toToDoList(toDoListInfra);</span>
+    }
+
+    @Override
+    public ToDoList getListById(Long listId) {
+<span class="nc" id="L26">        var toDoListInfra = listJpa.findById(listId);</span>
+<span class="nc bnc" id="L27" title="All 2 branches missed.">        if (toDoListInfra.isEmpty()) {</span>
+<span class="nc" id="L28">            return null;</span>
+        }
+<span class="nc" id="L30">        return ToDoListMapper.toToDoList(toDoListInfra.get());</span>
+    }
+
+    @Override
+    public ToDoList updateList(ToDoList toDoList) {
+<span class="nc" id="L35">        ToDoListInfra toDoListInfra = ToDoListMapper.toToDoListInfra(toDoList);</span>
+<span class="nc" id="L36">        toDoListInfra = listJpa.save(toDoListInfra);</span>
+<span class="nc" id="L37">        return ToDoListMapper.toToDoList(toDoListInfra);</span>
+    }
+
+    @Override
+    public void deleteById(Long listId) {
+<span class="nc" id="L42">        listJpa.deleteById(listId);</span>
+<span class="nc" id="L43">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

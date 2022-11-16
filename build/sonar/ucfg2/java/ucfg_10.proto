@@ -1,0 +1,55 @@
+
+horg.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItem(Ljava/util/List;)Ljava/util/List;y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java! (+"2"1*ç
+2y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java ($Æ´
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java ("
+%0java.util.ArrayList"java.util.ArrayList¿
+Ω
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java ($
+%1"java.util.ArrayList#<init>()V*
+
+%0java.util.ArrayList"ò
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java (%
+
+%0java.util.ArrayList*ò
+1y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java (˙˜
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java (
+%2java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*
+
+itemsjava.util.List2stream()À
+»
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java" (4!
+%3java.util.function.Function"__declareFunction*
+__sonar_lambda_0$‹Ÿ
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java (5
+%5java.util.stream.Stream"Sjava.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;*
+
+%2java.util.stream.Stream*#
+!
+%3java.util.function.Function2"map(Ljava/util/function/Function;)É
+Ä
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java> (Q 
+%6java.util.stream.Collector"@java.util.stream.Collectors#toList()Ljava/util/stream/Collector;*"
+java.util.stream.Collectors—Œ
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java (R
+%7java.util.List"Ojava.util.stream.Stream#collect(Ljava/util/stream/Collector;)Ljava/lang/Object;*
+
+%5java.util.stream.Stream*"
+ 
+%6java.util.stream.Collector2%collect(Ljava/util/stream/Collector;)"ì
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java (S
+
+%7java.util.List:
+itemsjava.util.ListB?"=
+;org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper

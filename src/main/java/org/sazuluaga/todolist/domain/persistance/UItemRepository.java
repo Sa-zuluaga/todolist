@@ -1,8 +1,17 @@
 package org.sazuluaga.todolist.domain.persistance;
 
 import org.sazuluaga.todolist.domain.model.ToDoItem;
-import org.sazuluaga.todolist.domain.model.ToDoList;
+
+import java.util.List;
 
 public interface UItemRepository {
-    ToDoList create(ToDoItem toDoItem, Long listId);
+    ToDoItem create(ToDoItem toDoItem);
+
+    List<ToDoItem> getByList(Long listId);
+
+    ToDoItem getItemById(Long itemId);
+
+    void deleteItemById(Long listId);
+
+    ToDoItem updateItem(ToDoItem toDoItem);
 }

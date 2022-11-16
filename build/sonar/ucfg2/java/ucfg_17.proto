@@ -1,0 +1,41 @@
+
+borg.sazuluaga.todolist.domain.Item.ItemMediatorDefault#getByList(Ljava/lang/Long;)Ljava/util/List;t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java* *(#"startingBlock*ø
+startingBlockt
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java*# *(0¿
+¼
+t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java) )(
+%2"
+__annotate*
+java.lang.Override*
+
+listIdjava.lang.Long©
+¦
+t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java*) *(/
+listIdjava.lang.Long"__annotation*
+
+%2*
+1*“
+1t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java+ +(‘
+Ž
+t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java+ +(?
+%09org.sazuluaga.todolist.domain.persistance.UItemRepository"__id*O*M8
+6org.sazuluaga.todolist.domain.Item.ItemMediatorDefault"
+UItemRepositoryòï
+t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java+ +(0
+%1java.util.List"eorg.sazuluaga.todolist.domain.persistance.UItemRepository#getByList(Ljava/lang/Long;)Ljava/util/List;*A
+?
+%09org.sazuluaga.todolist.domain.persistance.UItemRepository*
+
+listIdjava.lang.Long2getByList(Ljava/lang/Long;)"Ž
+t
+jC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/domain/Item/ItemMediatorDefault.java+ +(1
+
+%1java.util.List:
+listIdjava.lang.LongB:8
+6org.sazuluaga.todolist.domain.Item.ItemMediatorDefault

@@ -1,0 +1,1 @@
+org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper#toToDoList(Lorg/sazuluaga/todolist/infrastructure/model/ToDoListInfra;)Lorg/sazuluaga/todolist/domain/model/ToDoList;

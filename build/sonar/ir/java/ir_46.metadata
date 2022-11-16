@@ -1,0 +1,4 @@
+org.sazuluaga.todolist.infrastructure.persistance.ListRepository#getListById(Ljava/lang/Long;)Lorg/sazuluaga/todolist/domain/model/ToDoList;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper#toToDoList(Lorg/sazuluaga/todolist/infrastructure/model/ToDoListInfra;)Lorg/sazuluaga/todolist/domain/model/ToDoList;
+java.util.Optional#isEmpty()Z
+java.util.Optional#get()Ljava/lang/Object;

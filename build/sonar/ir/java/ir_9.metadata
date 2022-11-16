@@ -1,0 +1,3 @@
+org.sazuluaga.todolist.infrastructure.exception.HandlerException#<init>()V
+org.springframework.http.HttpStatus#value()I
+java.lang.Class#getSimpleName()Ljava/lang/String;

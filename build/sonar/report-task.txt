@@ -1,0 +1,7 @@
+organization=szuluagas
+projectKey=projectodo-list
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.34719
+dashboardUrl=https://sonarcloud.io/dashboard?id=projectodo-list
+ceTaskId=AYSCVofF8jTpvY_4_tEH
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYSCVofF8jTpvY_4_tEH

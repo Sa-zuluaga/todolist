@@ -1,0 +1,4 @@
+org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItem(Ljava/util/List;)Ljava/util/List;
+java.util.ArrayList#<init>()V
+java.util.stream.Collectors#toList()Ljava/util/stream/Collector;
+java.util.ArrayList#instance-init#

@@ -2,15 +2,42 @@ plugins {
     id 'org.springframework.boot' version '2.7.5'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
     id 'java'
+    id 'jacoco'
+    id "org.sonarqube" version "3.5.0.2730"
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+jacoco {
+    toolVersion = "0.8.8"
+}
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
+    afterEvaluate {
+        classDirectories.from = files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+                    'org/sazuluaga/todolist/infrastructure/model/**',
+                    'org/sazuluaga/todolist/domain/model/**',
+                    'org/sazuluaga/todolist/TodoListApp*'
+            ])
+        })
+    }
+}
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
+    }
+}
+sonarqube {
+    properties {
+        property "sonar.projectKey", "projectodo-list"
+        property "sonar.organization", "szuluagas"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.coverage.exclusions", "**/model/**, **/mappers/**, **/TodoListApp*"
     }
 }
 
@@ -24,8 +51,16 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.mockito:mockito-core:4.8.0"
+    testImplementation "org.mockito:mockito-inline:4.8.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.9.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.9.0"
+    testImplementation "io.rest-assured:rest-assured:5.2.0"
+    testImplementation "io.rest-assured:xml-path:5.2.0"
+    testImplementation "io.rest-assured:spring-mock-mvc:5.2.0"
+
 }
 
-tasks.named('test') {
+test {
     useJUnitPlatform()
 }

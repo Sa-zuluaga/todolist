@@ -1,14 +1,7 @@
 package org.sazuluaga.todolist.infrastructure.mapper;
 
-import org.sazuluaga.todolist.domain.model.ToDoItem;
 import org.sazuluaga.todolist.domain.model.ToDoList;
-import org.sazuluaga.todolist.infrastructure.model.ToDoItemInfra;
 import org.sazuluaga.todolist.infrastructure.model.ToDoListInfra;
-
-import java.util.List;
-import java.util.function.Function;
-
-import static java.util.stream.Collectors.toList;
 
 public class ToDoListMapper {
 
@@ -16,7 +9,10 @@ public class ToDoListMapper {
     }
 
     public static ToDoList toToDoList(ToDoListInfra toDoListInfra) {
-        ToDoList toDoList =  ToDoList.builder()
+        if (toDoListInfra == null) {
+            return null;
+        }
+        ToDoList toDoList = ToDoList.builder()
                 .listId(toDoListInfra.getListId())
                 .name(toDoListInfra.getName())
                 .description(toDoListInfra.getDescription())
@@ -26,7 +22,9 @@ public class ToDoListMapper {
     }
 
     public static ToDoListInfra toToDoListInfra(ToDoList toDoList) {
-
+        if (toDoList == null) {
+            return null;
+        }
         return ToDoListInfra.builder()
                 .listId(toDoList.getListId())
                 .name(toDoList.getName())

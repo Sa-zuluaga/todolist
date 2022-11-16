@@ -1,0 +1,2 @@
+org.sazuluaga.todolist.domain.Lists.ListMediatorDefault#updateList(Lorg/sazuluaga/todolist/domain/model/ToDoList;Ljava/lang/Long;)Lorg/sazuluaga/todolist/domain/model/ToDoList;
+org.sazuluaga.todolist.domain.common.ArgumentValidator#stringIsValid(Ljava/lang/String;)Z

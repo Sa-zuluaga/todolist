@@ -1,0 +1,2 @@
+org.sazuluaga.todolist.domain.common.ArgumentValidator#stringIsValid(Ljava/lang/String;)Z
+java.lang.String#isBlank()Z

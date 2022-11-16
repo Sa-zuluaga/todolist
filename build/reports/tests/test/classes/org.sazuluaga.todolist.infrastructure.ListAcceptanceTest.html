@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ListAcceptanceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ListAcceptanceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.sazuluaga.todolist.infrastructure.html">org.sazuluaga.todolist.infrastructure</a> &gt; ListAcceptanceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.230s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldCreateAListSuccesfully()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldDeleteAListSuccesful()</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldFindAListSuccesfully()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotCreateAListWithoutEmailAndReturnStatusCode400()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotCreateAListWithoutNameAndReturnStatusCode400()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotDeleteAListAndReturnStatusCode400()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotFindAListAndReturnStatusCode400()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldUpdateAListSuccesfully()</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldUpdateAListWithoutDescriptionAndReturnStatusCode200()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldUpdateAListWithoutEmailAndReturnStatusCode200()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldUpdateAListWithoutNameAndReturnStatusCode200()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-11-16 16:14:04.406  INFO 16012 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.sazuluaga.todolist.infrastructure.ListAcceptanceTest], using SpringBootContextLoader
+2022-11-16 16:14:04.407  INFO 16012 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.sazuluaga.todolist.infrastructure.ListAcceptanceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-11-16 16:14:04.407  INFO 16012 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.sazuluaga.todolist.infrastructure.ListAcceptanceTest]: ListAcceptanceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-11-16 16:14:04.410  INFO 16012 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.sazuluaga.todolist.TodoListApp for test class org.sazuluaga.todolist.infrastructure.ListAcceptanceTest
+2022-11-16 16:14:04.411  INFO 16012 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-11-16 16:14:04.411  INFO 16012 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@8a9aa9f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@69c1f8c8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6cd08cbf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2ac44bf0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f7cf165, org.springframework.test.context.support.DirtiesContextTestExecutionListener@99d53fa, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61c09302, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69d3df01, org.springframework.test.context.event.EventPublishingTestExecutionListener@612cfc87, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2cd71db, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6770ba03, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@10ac4a3b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1662546d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7fc8acd3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d8aa18b]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.5)
+
+2022-11-16 16:14:04.445  INFO 16012 --- [    Test worker] o.s.t.infrastructure.ListAcceptanceTest  : Starting ListAcceptanceTest using Java 11.0.16.1 on DESKTOP-1BKA73C with PID 16012 (started by Rendar in C:\Users\Rendar\Desktop\todolist)
+2022-11-16 16:14:04.445  INFO 16012 --- [    Test worker] o.s.t.infrastructure.ListAcceptanceTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-11-16 16:14:04.639  INFO 16012 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-16 16:14:04.656  INFO 16012 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2022-11-16 16:14:04.799  INFO 16012 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-11-16 16:14:04.800  INFO 16012 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-16 16:14:04.800  INFO 16012 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-16 16:14:04.828  INFO 16012 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-11-16 16:14:04.829  INFO 16012 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 382 ms
+2022-11-16 16:14:04.933  INFO 16012 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-16 16:14:04.941  INFO 16012 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-11-16 16:14:04.964  INFO 16012 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-11-16 16:14:04.965  INFO 16012 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+Hibernate: alter table if exists items drop constraint if exists FKrqa704hx19ty2bxvb1w4efous
+Hibernate: drop table if exists items cascade
+Hibernate: drop table if exists lists cascade
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start 1 increment 1
+Hibernate: create table items (item_id  bigserial not null, description varchar(255), done boolean not null, list_id int8, primary key (item_id))
+Hibernate: create table lists (list_id int8 not null, description varchar(255), email varchar(255), name varchar(255), primary key (list_id))
+Hibernate: alter table if exists items add constraint FKrqa704hx19ty2bxvb1w4efous foreign key (list_id) references lists
+2022-11-16 16:14:05.054  INFO 16012 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-16 16:14:05.055  INFO 16012 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-16 16:14:05.191  WARN 16012 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-16 16:14:05.493  INFO 16012 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54966 (http) with context path ''
+2022-11-16 16:14:05.496  INFO 16012 --- [    Test worker] o.s.t.infrastructure.ListAcceptanceTest  : Started ListAcceptanceTest in 1.08 seconds (JVM running for 14.564)
+2022-11-16 16:14:05.516  INFO 16012 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-16 16:14:05.517  INFO 16012 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-16 16:14:05.518  INFO 16012 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at Nov 16, 2022, 4:14:06 PM</p>
+</div>
+</div>
+</body>
+</html>

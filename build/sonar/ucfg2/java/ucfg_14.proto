@@ -1,0 +1,27 @@
+
+¶org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItemInfra(Lorg/sazuluaga/todolist/domain/model/ToDoItem;)Lorg/sazuluaga/todolist/infrastructure/model/ToDoItemInfra;y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java*  *(/"2"1*„
+2y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java, ,("ƒ
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java, ,(
+""*®
+1y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java.& .(3†
+ƒ
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java2 2(H
+%0"¶org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper#toToDoListInfra(Lorg/sazuluaga/todolist/domain/model/ToDoList;)Lorg/sazuluaga/todolist/infrastructure/model/ToDoListInfra;*?"=
+;org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper*
+""Ø
+Õ
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java. 3(J
+toDoItemInfra9org.sazuluaga.todolist.infrastructure.model.ToDoItemInfra"__id*
+"""É
+y
+oC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/mapper/ToDoItemMapper.java4 4(L
+J
+toDoItemInfra9org.sazuluaga.todolist.infrastructure.model.ToDoItemInfra:8
+toDoItem,org.sazuluaga.todolist.domain.model.ToDoItemB?"=
+;org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper

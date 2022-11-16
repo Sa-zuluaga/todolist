@@ -1,0 +1,155 @@
+
+”org.sazuluaga.todolist.infrastructure.exception.HandlerException#handleAllExceptions(Ljava/lang/Exception;)Lorg/springframework/http/ResponseEntity;~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java1 (D"startingBlock*½
+2~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java#2 #(A©
+¦
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java#C #(N
+%8java.lang.String"__id*
+""Ø
+Õ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java# #(PE
+error<org.sazuluaga.todolist.infrastructure.exception.ApiExecption"__id*
+""¼
+¹
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java$1 $(Q)
+%9#org.springframework.http.HttpStatus"__id*
+""ÜÙ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java$ $().
+%10'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityœ
+™
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java$ $(R
+%11"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*0
+.
+%10'org.springframework.http.ResponseEntity*G
+E
+error<org.sazuluaga.todolist.infrastructure.exception.ApiExecption*+
+)
+%9#org.springframework.http.HttpStatusî
+ë
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java$ $(R1
+result'org.springframework.http.ResponseEntity"__id*0
+.
+%10'org.springframework.http.ResponseEntity*
+1*œ
+3~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java 2  (AØ
+Õ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java   (LE
+error<org.sazuluaga.todolist.infrastructure.exception.ApiExecption"__id*
+""Ë
+È
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java!1 !(K)
+%5#org.springframework.http.HttpStatus"Sorg.springframework.http.HttpStatus#valueOf(I)Lorg/springframework/http/HttpStatus;*'"%
+#org.springframework.http.HttpStatus*
+
+codigojava.lang.IntegerÛØ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java! !()-
+%6'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityš
+—
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java! !(L
+%7"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
+-
+%6'org.springframework.http.ResponseEntity*G
+E
+error<org.sazuluaga.todolist.infrastructure.exception.ApiExecption*+
+)
+%5#org.springframework.http.HttpStatusí
+ê
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java! !(L1
+result'org.springframework.http.ResponseEntity"__id*/
+-
+%6'org.springframework.http.ResponseEntity*
+1*Î
+startingBlock~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.javaD (Yø
+õ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (&
+%12"
+__annotate*<:
+8org.springframework.web.bind.annotation.ExceptionHandler*"
+ 
+	exceptionjava.lang.Exception¼
+¹
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.javaO (X 
+	exceptionjava.lang.Exception"__annotation*
+
+%12*
+4*à
+4~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (,Ä
+Á
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (,1
+result'org.springframework.http.ResponseEntity"__id*
+""øõ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java! (5
+%0java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*"
+ 
+	exceptionjava.lang.Exception2
+getClass()øõ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java! (E
+%1java.lang.String"1java.lang.Class#getSimpleName()Ljava/lang/String;*
+
+%0java.lang.Class2getSimpleName()È
+Å
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (F#
+excepcionNombrejava.lang.String"__id*
+
+%1java.lang.Stringþ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (/
+%2java.lang.String"2java.lang.Throwable#getMessage()Ljava/lang/String;*"
+ 
+	exceptionjava.lang.Exception2getMessage()À
+½
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (0
+mensajejava.lang.String"__id*
+
+%2java.lang.String¿
+¼
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java ($,
+%3&java.util.concurrent.ConcurrentHashMap"__id*
+""ý
+ú
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (9
+%4java.lang.Integer"__mapGet*.
+,
+%3&java.util.concurrent.ConcurrentHashMap*%
+#
+excepcionNombrejava.lang.StringÁ
+¾
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java (:
+codigojava.lang.Integer"__id*
+
+%4java.lang.Integer*
+2
+3*»
+1~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java& &("µ
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/exception/HandlerException.java& &(3
+1
+result'org.springframework.http.ResponseEntity: 
+	exceptionjava.lang.ExceptionBDB
+@org.sazuluaga.todolist.infrastructure.exception.HandlerException

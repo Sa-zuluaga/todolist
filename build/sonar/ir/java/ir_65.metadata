@@ -1,0 +1,4 @@
+org.sazuluaga.todolist.infrastructure.controller.ItemController#getItemById(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItemInfra(Lorg/sazuluaga/todolist/domain/model/ToDoItem;)Lorg/sazuluaga/todolist/infrastructure/model/ToDoItemInfra;
+org.springframework.http.ResponseEntity#instance-init#
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V

@@ -15,9 +15,12 @@ import javax.persistence.*;
 @Table(name = "items")
 public class ToDoItemInfra {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long itemId;
     private String description;
     private boolean done;
 
+    @ManyToOne
+    @JoinColumn(name = "list_id")
+    private ToDoListInfra list;
 }

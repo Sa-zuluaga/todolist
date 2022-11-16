@@ -1,0 +1,3 @@
+org.sazuluaga.todolist.domain.Lists.ListMediatorDefault#deleteById(Ljava/lang/Long;)V
+org.sazuluaga.todolist.domain.exception.BadRequest#instance-init#
+org.sazuluaga.todolist.domain.exception.BadRequest#<init>(Ljava/lang/String;)V

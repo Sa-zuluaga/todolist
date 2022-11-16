@@ -20,11 +20,9 @@ public class ListController {
     }
 
     @PostMapping(path = "/lists")
-    public ResponseEntity<ToDoListInfra> create(@RequestBody ToDoListInfra toDoListInfra) {
-        ToDoList toDoListToCreate = ToDoListMapper.toToDoList(toDoListInfra);
-        ToDoList toDoListCreated = listMediator.create(toDoListToCreate);
-        ToDoListInfra toDoListInfraCreated = ToDoListMapper.toToDoListInfra(toDoListCreated);
-        return new ResponseEntity<>(toDoListInfraCreated, HttpStatus.CREATED);
+    public ResponseEntity<ToDoList> create(@RequestBody ToDoList toDoList) {
+        ToDoList toDoListCreated = listMediator.create(toDoList);
+        return new ResponseEntity<>(toDoListCreated, HttpStatus.CREATED);
     }
 
     @GetMapping(path = "/lists/{listId}")
@@ -33,6 +31,7 @@ public class ListController {
         ToDoListInfra toDoListInfraFinded = ToDoListMapper.toToDoListInfra(toDoListFinded);
         return new ResponseEntity<>(toDoListInfraFinded, HttpStatus.OK);
     }
+
     @PutMapping(path = "/lists/{listId}")
     public ResponseEntity<ToDoListInfra> updateList(@PathVariable("listId") Long listId, @RequestBody ToDoListInfra toDoListInfra) {
         ToDoList toDoListToUpdate = ToDoListMapper.toToDoList(toDoListInfra);
@@ -40,10 +39,9 @@ public class ListController {
         ToDoListInfra toDoListInfraUpdated = ToDoListMapper.toToDoListInfra(toDoListUpdated);
         return new ResponseEntity<>(toDoListInfraUpdated, HttpStatus.OK);
     }
+
     @DeleteMapping(path = "/lists/{listId}")
-    public ResponseEntity deleteById(@PathVariable("listId") Long listId){
-        boolean toDoListDeleted = listMediator.deleteById(listId);
-        return new ResponseEntity<>(toDoListDeleted, HttpStatus.OK);
-    //fix output con string
+    public void deleteById(@PathVariable("listId") Long listId) {
+        listMediator.deleteById(listId);
     }
 }

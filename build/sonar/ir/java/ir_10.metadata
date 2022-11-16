@@ -1,0 +1,8 @@
+org.sazuluaga.todolist.infrastructure.exception.HandlerException#handleAllExceptions(Ljava/lang/Exception;)Lorg/springframework/http/ResponseEntity;
+null
+java.lang.Object#getClass()Ljava/lang/Class;
+org.springframework.http.HttpStatus#valueOf(I)Lorg/springframework/http/HttpStatus;
+org.sazuluaga.todolist.infrastructure.exception.ApiExecption#instance-init#
+java.lang.Class#getSimpleName()Ljava/lang/String;
+org.springframework.http.ResponseEntity#instance-init#
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V

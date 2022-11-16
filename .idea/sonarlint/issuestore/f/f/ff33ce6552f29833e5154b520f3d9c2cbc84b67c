@@ -1,0 +1,9 @@
+
+v
+java:S1488!"`Immediately return this expression instead of assigning it to the temporary variable "toDoItem".(ã÷ë€
+€
+java:S1488."eImmediately return this expression instead of assigning it to the temporary variable "toDoItemInfra".(€ÓÁ¡ûÿÿÿÿ
+b
+java:S1612"GReplace this lambda with method reference 'ToDoItemMapper::toToDoItem'.(Ôÿ«ùÿÿÿÿ
+h
+java:S1612"LReplace this lambda with method reference 'ToDoItemMapper::toToDoItemInfra'.(ğÁ÷F8»…êÇ0

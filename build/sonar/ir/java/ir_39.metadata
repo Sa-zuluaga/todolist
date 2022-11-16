@@ -1,0 +1,4 @@
+org.sazuluaga.todolist.domain.Lists.ListMediatorDefault#create(Lorg/sazuluaga/todolist/domain/model/ToDoList;)Lorg/sazuluaga/todolist/domain/model/ToDoList;
+org.sazuluaga.todolist.domain.exception.BadRequest#instance-init#
+org.sazuluaga.todolist.domain.exception.BadRequest#<init>(Ljava/lang/String;)V
+org.sazuluaga.todolist.domain.common.ArgumentValidator#stringIsValid(Ljava/lang/String;)Z

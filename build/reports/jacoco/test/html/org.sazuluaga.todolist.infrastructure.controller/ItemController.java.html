@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ItemController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">todolist</a> &gt; <a href="index.source.html" class="el_package">org.sazuluaga.todolist.infrastructure.controller</a> &gt; <span class="el_source">ItemController.java</span></div><h1>ItemController.java</h1><pre class="source lang-java linenums">package org.sazuluaga.todolist.infrastructure.controller;
+
+
+import org.sazuluaga.todolist.domain.Item.ItemMediator;
+import org.sazuluaga.todolist.domain.model.ToDoItem;
+import org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper;
+import org.sazuluaga.todolist.infrastructure.model.ToDoItemInfra;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(path = &quot;/lists/{listId}&quot;)
+
+public class ItemController {
+
+    @Autowired
+    private final ItemMediator itemMediator;
+
+<span class="fc" id="L23">    public ItemController(ItemMediator itemMediator) {</span>
+<span class="fc" id="L24">        this.itemMediator = itemMediator;</span>
+<span class="fc" id="L25">    }</span>
+
+    @PostMapping(&quot;/items&quot;)
+    public ResponseEntity&lt;ToDoItem&gt; create(@RequestBody ToDoItem toDoItem, @PathVariable(&quot;listId&quot;) Long listId) {
+<span class="fc" id="L29">        ToDoItem itemCreated = itemMediator.create(toDoItem, listId);</span>
+<span class="fc" id="L30">        return new ResponseEntity&lt;&gt;(itemCreated, HttpStatus.CREATED);</span>
+    }
+
+    @GetMapping(&quot;/items&quot;)
+    public ResponseEntity&lt;List&lt;ToDoItem&gt;&gt; getByList(@PathVariable(&quot;listId&quot;) Long listId) {
+<span class="nc" id="L35">        List&lt;ToDoItem&gt; items = itemMediator.getByList(listId);</span>
+<span class="nc" id="L36">        return new ResponseEntity&lt;&gt;(items, HttpStatus.OK);</span>
+    }
+
+    @GetMapping(&quot;/items/{itemId}&quot;)
+    public ResponseEntity&lt;ToDoItemInfra&gt; getItemById(@PathVariable(&quot;itemId&quot;) Long itemId) {
+<span class="fc" id="L41">        ToDoItem toDoItemFinded = itemMediator.getItemById(itemId);</span>
+<span class="fc" id="L42">        ToDoItemInfra toDoItemInfraFinded = ToDoItemMapper.toToDoItemInfra(toDoItemFinded);</span>
+<span class="fc" id="L43">        return new ResponseEntity&lt;&gt;(toDoItemInfraFinded, HttpStatus.OK);</span>
+    }
+
+    @PutMapping(path = &quot;/items/{itemId}&quot;)
+    public ResponseEntity&lt;ToDoItemInfra&gt; updateItem(@PathVariable(&quot;itemId&quot;) Long itemId, @PathVariable(&quot;listId&quot;) Long listId, @RequestBody ToDoItemInfra toDoItemInfra) {
+<span class="fc" id="L48">        ToDoItem toDoItemToUpdate = ToDoItemMapper.toToDoItem(toDoItemInfra);</span>
+<span class="fc" id="L49">        ToDoItem toDoItemUpdated = itemMediator.updateItem(toDoItemToUpdate, itemId, listId);</span>
+<span class="fc" id="L50">        ToDoItemInfra toDoItemInfraUpdated = ToDoItemMapper.toToDoItemInfra(toDoItemUpdated);</span>
+<span class="fc" id="L51">        return new ResponseEntity&lt;&gt;(toDoItemInfraUpdated, HttpStatus.OK);</span>
+    }
+
+    @DeleteMapping(&quot;/items/{itemId}&quot;)
+    public void deleteItemById(@PathVariable(&quot;itemId&quot;) Long itemId) {
+<span class="fc" id="L56">        itemMediator.deleteItemById(itemId);</span>
+<span class="fc" id="L57">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

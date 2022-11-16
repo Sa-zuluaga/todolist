@@ -1,0 +1,3 @@
+org.sazuluaga.todolist.infrastructure.persistance.ListRepository#create(Lorg/sazuluaga/todolist/domain/model/ToDoList;)Lorg/sazuluaga/todolist/domain/model/ToDoList;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper#toToDoList(Lorg/sazuluaga/todolist/infrastructure/model/ToDoListInfra;)Lorg/sazuluaga/todolist/domain/model/ToDoList;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoListMapper#toToDoListInfra(Lorg/sazuluaga/todolist/domain/model/ToDoList;)Lorg/sazuluaga/todolist/infrastructure/model/ToDoListInfra;

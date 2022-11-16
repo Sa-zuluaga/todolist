@@ -1,0 +1,5 @@
+org.sazuluaga.todolist.infrastructure.controller.ItemController#updateItem(Ljava/lang/Long;Ljava/lang/Long;Lorg/sazuluaga/todolist/infrastructure/model/ToDoItemInfra;)Lorg/springframework/http/ResponseEntity;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItem(Lorg/sazuluaga/todolist/infrastructure/model/ToDoItemInfra;)Lorg/sazuluaga/todolist/domain/model/ToDoItem;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItemInfra(Lorg/sazuluaga/todolist/domain/model/ToDoItem;)Lorg/sazuluaga/todolist/infrastructure/model/ToDoItemInfra;
+org.springframework.http.ResponseEntity#instance-init#
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V

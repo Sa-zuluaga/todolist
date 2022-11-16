@@ -1,0 +1,56 @@
+
+lorg.sazuluaga.todolist.infrastructure.persistance.ItemRepository#getByList(Ljava/lang/Long;)Ljava/util/List;~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java! !(#"startingBlock*ñ
+startingBlock~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java!# !(0…
+∆
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java   (
+%3"
+__annotate*
+java.lang.Override*
+
+listIdjava.lang.Long≥
+∞
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java!) !(/
+listIdjava.lang.Long"__annotation*
+
+%3*
+1*Ä
+1~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java") "(0°
+û
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java") "(0C
+%0=org.sazuluaga.todolist.infrastructure.persistance.jpa.ItemJpa"__id*Q*OB
+@org.sazuluaga.todolist.infrastructure.persistance.ItemRepository"	
+itemJpaíè
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java") "(I
+%1java.util.List"porg.sazuluaga.todolist.infrastructure.persistance.jpa.ItemJpa#findByListListId(Ljava/lang/Long;)Ljava/util/List;*E
+C
+%0=org.sazuluaga.todolist.infrastructure.persistance.jpa.ItemJpa*
+
+listIdjava.lang.Long2"findByListListId(Ljava/lang/Long;)ø
+º
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java" "(J
+
+itemInfrasjava.util.List"__id*
+
+%1java.util.List‰
+·
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java# #(4
+%2java.util.List"horg.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItem(Ljava/util/List;)Ljava/util/List;*?"=
+;org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper*
+
+
+itemInfrasjava.util.List"ò
+~
+tC:/Users/Rendar/Desktop/todolist/src/main/java/org/sazuluaga/todolist/infrastructure/persistance/ItemRepository.java# #(5
+
+%2java.util.List:
+listIdjava.lang.LongBDB
+@org.sazuluaga.todolist.infrastructure.persistance.ItemRepository

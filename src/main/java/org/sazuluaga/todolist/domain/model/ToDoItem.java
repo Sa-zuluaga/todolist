@@ -13,5 +13,6 @@ import lombok.NoArgsConstructor;
 public class ToDoItem {
     private Long itemId;
     private String description;
-    private boolean done;
+    private Boolean done;
+    private ToDoList list;
 }

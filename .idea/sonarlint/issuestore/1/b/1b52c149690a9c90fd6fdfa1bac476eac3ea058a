@@ -1,0 +1,5 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß’İä
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ï‰Ç
+t	java:S116"ZRename this field "UItemRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÉÙüÿÿÿÿ
+n	java:S116"ZRename this field "IListRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôí…0

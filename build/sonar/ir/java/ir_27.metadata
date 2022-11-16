@@ -1,0 +1,3 @@
+org.sazuluaga.todolist.domain.Item.ItemMediatorDefault#getItemById(Ljava/lang/Long;)Lorg/sazuluaga/todolist/domain/model/ToDoItem;
+org.sazuluaga.todolist.domain.exception.BadRequest#instance-init#
+org.sazuluaga.todolist.domain.exception.BadRequest#<init>(Ljava/lang/String;)V

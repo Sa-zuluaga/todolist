@@ -1,0 +1,2 @@
+org.sazuluaga.todolist.infrastructure.persistance.ItemRepository#getByList(Ljava/lang/Long;)Ljava/util/List;
+org.sazuluaga.todolist.infrastructure.mapper.ToDoItemMapper#toToDoItem(Ljava/util/List;)Ljava/util/List;
